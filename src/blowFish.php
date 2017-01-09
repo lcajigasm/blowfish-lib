@@ -5,9 +5,9 @@ Class blowFish
 	
 	public $dig;
 
-	public function __construct($dig = 5)
+	public function __construct($digs = 5)
 	{
-		$this->$dig = $dig;
+		$this->dig = $digs;
 	}
 
 
