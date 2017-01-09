@@ -14,7 +14,7 @@
         }
     ],
     "support": {
-        "issues": "	"
+        "issues": "https://github.com/luisinder/blowfish-lib/issues"
     }, 
     "require": {
         "php": ">=5.4.0"
