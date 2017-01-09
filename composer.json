@@ -1,0 +1,28 @@
+{
+    "name": "luisinder/blowfish-lib", 
+    "version": "0.1", 
+    "description": "", 
+    "type": "library", 
+    "keywords": ["blowfish"], 
+    "homepage": "https://github.com/luisinder/blowfish-lib", 
+    "license": "MIT", 
+    "authors": [
+        {
+            "name": "Luis Cajigas", 
+            "role": "Developer", 
+            "email": "luis@luisinder.me"
+        }
+    ],
+    "support": {
+        "issues": "	"
+    }, 
+    "require": {
+        "php": ">=5.4.0"
+    }, 
+    "require-dev": {
+        "php": ">=5.5.7"
+    }, 
+    "autoload": {
+        "files": ["src/blowFish.php"]
+    }
+}
