@@ -24,7 +24,8 @@ Class blowFish
 
 	static public function checkPassword($stringP, $password)
 	{
-		 return (crypt($stringP,$password) == $password) ? true:false;
+		 $response = (crypt($stringP,$password) == $password) ? true:false;
+		 return $response;
 	}
 }
 
