@@ -1,28 +1,39 @@
 {
-    "name": "luisinder/blowfish-lib", 
-    "version": "0.1.5", 
-    "description": "", 
-    "type": "library", 
-    "keywords": ["blowfish"], 
-    "homepage": "https://github.com/luisinder/blowfish-lib", 
-    "license": "MIT", 
+    "name": "luisinder/blowfish-lib",
+    "version": "0.2.0",
+    "description": "Simple helper library for hashing and verifying passwords using Blowfish (bcrypt).",
+    "type": "library",
+    "keywords": ["blowfish", "bcrypt", "password", "hash"],
+    "homepage": "https://github.com/luisinder/blowfish-lib",
+    "license": "MIT",
     "authors": [
         {
-            "name": "Luis Cajigas", 
-            "role": "Developer", 
-            "email": "luis@luisinder.me"
+            "name": "Luis Cajigas",
+            "role": "Developer"
         }
     ],
     "support": {
         "issues": "https://github.com/luisinder/blowfish-lib/issues"
-    }, 
+    },
     "require": {
-        "php": ">=5.4.0"
-    }, 
-    "require-dev": {
-        "php": ">=5.5.7"
-    }, 
+        "php": ">=7.4"
+    },
     "autoload": {
-        "files": ["src/blowFish.php"]
+        "files": ["src/blowFish.php"],
+        "psr-4": {
+            "Luisinder\\BlowfishLib\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Luisinder\\BlowfishLib\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "example": "php examples/example.php",
+        "test": "phpunit"
     }
 }
